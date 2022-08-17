@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_local/main.dart';
+import 'package:intl/intl.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,6 +26,10 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            Text(
+              DateFormat.yMd().format(DateTime.now()),
+              style: Theme.of(context).textTheme.displayMedium,
+            ),
             Text(
               _appLocalizations!.bye,
               style: Theme.of(context).textTheme.displayMedium,
