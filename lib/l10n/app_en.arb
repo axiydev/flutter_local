@@ -1,0 +1,6 @@
+{
+    "helloWorld":"Hello World",
+    "@helloWorld":{"description":"The word using in programming"},
+    "bye":"Bye!",
+    "@bye": {"description":"Bye Adios"}
+}
